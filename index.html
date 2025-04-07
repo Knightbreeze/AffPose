@@ -117,7 +117,7 @@
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://knightbreeze.github.io/AffPose/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -125,8 +125,8 @@
                   </span>
                   <span>Paper</span>
                 </a>
-              </span>
-              <span class="link-block">
+              </span> -->
+              <!-- <span class="link-block">
                 <a href="https://knightbreeze.github.io/AffPose/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -134,7 +134,7 @@
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Video Link. -->
               <span class="link-block">
                 <a href="https://youtu.be/hvcqzWI76K8"
@@ -284,7 +284,7 @@
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered" style="margin-top: 3rem;">
+    <!-- <div class="columns is-centered has-text-centered" style="margin-top: 3rem;">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
@@ -292,7 +292,7 @@
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Paper video. -->
 
     <!-- Figures -->
@@ -303,7 +303,7 @@
         <div class="columns is-centered">
           <div class="column is-full">
             <img src="./static/Website image/fig2.png" alt="Figure 2" style="width: 100%;">
-            <p class="has-text-centered">Architecture of AffPose</p>
+            <p class="has-text-centered">Architecture of AffPose: Fig. 2: Overview of AffPose. AffPose consists of two primary components: affordance detection and pose estimation, sharing the same backbone: Directional ResNet50. (a) Affordance detection: feature maps generated from FPN and DTMs are fused and fed into RPN. Then, affordance categories and mask are derived after convolution layers and fully connected layers. (b) Pose estimation: both coarse and fine 3D features {F_3D^c,F_3D^f }, as well as 2D feature maps {F_2D^c,F_2D^f }, are stored and position-encoded. F_3D^c and F_2D^c are passed through N_c self-cross attention layers to establish the coarse 2D-3D matching. Based on the matching, the F_2D^f are cropped to generate the F_crop^f. F_crop^f and F_3D^f  are fed into attention layers to refine the 2D-3D matching, which is then passed to PnP to solve the pose. (c) The affordance mask obtained in (b) is integrated into the attention layers in (c) by masked attention module.</p>
           </div>
         </div>
 
@@ -350,19 +350,19 @@
         <div class="columns is-centered">
           <div class="column is-full">
             <img src="./static/Website image/fig5.png" alt="Figure 5" style="width: 70%;">
-            <p class="has-text-centered">Point Cloud Reconstruction</p>
+            <p class="has-text-centered">Point Cloud Reconstruction: results between our approach and commercial RGB-D cameras (Kinect DK, RealSense, and Mech-Mind)</p>
           </div>
         </div>
         <div class="columns is-centered">
           <div class="column is-full">
             <img src="./static/Website image/fig7.png" alt="Figure 6" style="width: 100%;">
-            <p class="has-text-centered">Affordance Detection and Pose Estimation</p>
+            <p class="has-text-centered">Detection results of AffPose for various tools: query images (top row), affordance detection results (middle row), and predicted poses (bottom row)</p>
           </div>
         </div>
         <div class="columns is-centered">
           <div class="column is-full">
             <img src="./static/Website image/fig6.png" alt="Figure 7" style="width: 100%;">
-            <p class="has-text-centered">Real-world Experiments</p>
+            <p class="has-text-centered">Real-world Experiments: The robot first applies AffPose to acquire the object pose and affordance, then grasps the tool at the grasp affordance position to execute the corresponding operation. (a-b) Hitting a nail with a claw hammer and a rubber mallet. (c) Loosening a screw with a screwdriver. (d) Cutting a banana with a knife. (e) Shoveling a solidified object with a shovel. (f) Drilling a hole in the box with an electric drill.</p>
           </div>
         </div>
       </div>
